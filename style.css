@@ -1,0 +1,115 @@
+body{
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+    font-size: large;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    display: flex;
+    align-items:center;
+}
+
+header img{
+    width: 100px;
+}
+
+.subscribe {
+    background-color: #d5f8d6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+.subscribe_text{
+    width: 40%;
+}
+
+.subscribe_form{
+    width: 60%;
+    align-items: flex-end;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 5px;
+    max-width: 300px;
+    margin: 5px;
+}
+
+.promo img{
+    width: 100%;
+    height: 100px;
+    object-fit: none;
+}
+
+.cards_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.plant_card{
+    padding: 20px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 900px) { 
+    .cards_container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cards_container{
+        grid-template-columns: 1fr;
+    }
+
+    header nav{
+        display:none;
+    }
+}
+
+footer {
+    background-color: #d5f8d6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+footer a, footer p{
+    margin: 5px;
+}
+
+footer img{
+    height: 150px;
+}
+
+footer nav, footer div{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo{
+    align-items: flex-end;
+}
